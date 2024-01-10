@@ -1,5 +1,5 @@
 ## Personal Website
-This is my personal website that I will use for resumes. Accessible [here](https://danieljung.ca/)
+This website is built using HTML and CSS, providing a clean and modern design. It features a fixed navigation bar, a dynamic project dropdown, and a visually appealing home section. The layout is responsive, ensuring a seamless experience across different devices. Accessible [here](https://danieljung.ca/)
 
 # Features
 * Navigation Bar: The fixed navigation bar contains links to various sections of the website, including Home, Projects, Contact, Resume, and LinkedIn.
