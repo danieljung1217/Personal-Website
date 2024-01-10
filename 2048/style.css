@@ -10,7 +10,7 @@
 body {
   height: 100vh;
   display: flex;
-  
+
   background-color: #1a0d2e;
 }
 
@@ -30,15 +30,11 @@ body {
   margin-bottom: 20px;
 }
 
-
-
 #grid-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   gap: 10px;
 }
-
-
 
 .game-container h1 {
   position: relative;
@@ -192,7 +188,7 @@ body {
   animation-delay: 0.4s;
 }
 
-.game-container::before{
+.game-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -202,7 +198,6 @@ body {
   background: #1a0d2e;
   animation: showRight 3s ease forwards;
 }
-
 
 @keyframes showRight {
   100% {
@@ -250,7 +245,6 @@ body {
 }
 
 .github a {
-  
   transition: 0.3s;
   color: #ededed;
   width: 25;

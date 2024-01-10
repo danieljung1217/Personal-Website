@@ -151,12 +151,12 @@ body {
   }
 }
 
-.dropdown {
+.proj-drop {
   position: relative;
   display: inline-block;
 }
 
-.drop-items {
+.proj-items {
   padding: 6px;
   border-radius: 5px;
   background-color: #2b1057;
@@ -167,7 +167,7 @@ body {
   display: none;
 }
 
-.dropdown:hover .drop-area {
+.proj-drop:hover .drop-area {
   display: block;
   padding-top: 6px;
 }
