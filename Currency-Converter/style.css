@@ -56,7 +56,7 @@ body {
 }
 
 .converter {
-  margin-top: 5%;
+  margin-top: 10vh;
   display: flex;
   text-align: center;
   justify-content: center;
