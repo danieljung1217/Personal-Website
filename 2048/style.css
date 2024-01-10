@@ -216,6 +216,10 @@ body {
   background-color: #2b1057;
 }
 
+.proj-item {
+  white-space: nowrap;
+}
+
 .drop-area {
   position: absolute;
   display: none;

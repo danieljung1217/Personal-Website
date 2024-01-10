@@ -132,7 +132,6 @@ body {
   animation: showRight 3s ease forwards;
 }
 
-
 @keyframes showRight {
   100% {
     width: 0%;
@@ -148,6 +147,10 @@ body {
   padding: 6px;
   border-radius: 5px;
   background-color: #2b1057;
+}
+
+.proj-item {
+  white-space: nowrap;
 }
 
 .drop-area {
@@ -179,7 +182,6 @@ body {
 }
 
 .github a {
-  
   transition: 0.3s;
   color: #ededed;
   width: 25;
