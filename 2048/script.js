@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const message = document.getElementById("message");
   const retryButton = document.getElementById("retry-button");
 
-  let grid = Array.from({length: 4}, () => Array(4).fill(0));
+  let grid = Array.from({ length: 4 }, () => Array(4).fill(0));
   let score = 0;
 
   function initializeGame() {
-    grid = Array.from({length: 4}, () => Array(4).fill(0));
+    grid = Array.from({ length: 4 }, () => Array(4).fill(0));
     score = 0;
     updateGrid();
     generateRandomTile();
