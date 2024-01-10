@@ -1,5 +1,5 @@
 ## Personal Website
-This is my personal website that I will use for resumes. Accessible [here](danieljung.ca)
+This is my personal website that I will use for resumes. Accessible [here](https://danieljung.ca/)
 
 # Features
 * Navigation Bar: The fixed navigation bar contains links to various sections of the website, including Home, Projects, Contact, Resume, and LinkedIn.
