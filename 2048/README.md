@@ -1,4 +1,4 @@
-# 2048-Game
+# 2048
 This project is an implementation of the popular game 2048 using HTML, CSS, and JavaScript.
 Players can use the up, down, left, and right arrow keys to push blocks around and combine them.
 The objective is to combine enough blocks in the 4x4 grid to get to the number 2048.
