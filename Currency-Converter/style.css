@@ -177,7 +177,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding-right: 50px;
+  padding-right: 30px;
   padding-bottom: 25px;
   text-align: right;
   color: #ededed;
@@ -207,8 +207,6 @@ body {
   display: none;
   cursor: pointer;
 }
-
-
 
 .bar {
   display: block;
@@ -255,9 +253,31 @@ body {
     left: 0;
   }
 
+  .proj-drop:hover .drop-area {
+    display: block;
+  }
+
   .drop-area {
     position: absolute;
     display: none;
+    top: 100%;
+    left: 50%; /* Center the dropdown under the "Projects" link */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: max-content;
+    padding-top: 6px;
+    background-color: #1a0d2e;
   }
 
+  .proj-items {
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #2b1057;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items horizontally */
+  }
+
+  .proj-item {
+    white-space: nowrap;
+  }
 }
