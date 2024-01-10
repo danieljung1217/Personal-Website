@@ -10,7 +10,7 @@
 body {
   height: 100vh;
   display: flex;
-
+  padding-bottom: 100px;
   background-color: #1a0d2e;
 }
 
@@ -143,6 +143,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  background-color: #1a0d2e;
 }
 
 .logo {
@@ -230,6 +231,11 @@ body {
   padding-top: 6px;
 }
 
+.header.hide-header {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
 .footer {
   font-size: 24px;
   position: fixed;
@@ -252,4 +258,68 @@ body {
   transition: 0.3s;
   color: #ededed;
   width: 25;
+}
+
+.github-btn {
+  background-color: #361664;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #ededed;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1a0d2e;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  .drop-area {
+    position: absolute;
+    display: none;
+  }
 }
