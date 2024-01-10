@@ -203,3 +203,26 @@ body {
   display: block;
   padding-top: 6px;
 }
+
+.footer a{
+  font-size: 24px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  text-align: right;
+  color: #ededed;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a.active {
+  color: #883ffc;
+}
+
+.github-svg {
+  color: #ededed;
+  width: 25;
+}
