@@ -1,7 +1,7 @@
-## Personal Website
+# Personal Website
 This website is built using HTML and CSS, providing a clean and modern design. It features a fixed navigation bar, a dynamic project dropdown, and a visually appealing home section. The layout is responsive, ensuring a seamless experience across different devices. Accessible [here](https://danieljung.ca/)
 
-# Features
+## Features
 * Navigation Bar: The fixed navigation bar contains links to various sections of the website, including Home, Projects, Contact, Resume, and LinkedIn.
 * Home Section: The home section welcomes visitors with a personalized greeting, inviting them to explore the website.
 * Project Dropdown: The "Projects" link in the navigation bar reveals a dropdown with links to specific projects, such as "2048" and "Currency Converter"
