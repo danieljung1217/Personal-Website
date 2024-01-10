@@ -4,43 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>2048 Game</title>
+    <title>Personal Website</title>
   </head>
   <body>
     <header class="header">
-      <a href="../" class="logo">DANIEL JUNG</a>
+      <a href="" class="logo">DANIEL JUNG</a>
 
       <nav class="navbar">
-        <a href="../">Home</a>
-        <div class="proj-drop">
-          <a href="#" class="active">Projects</a>
+        <a href="" class="active">Home</a>
+        <div class="dropdown">
+          <a href="#">Projects</a>
           <div class="drop-area">
-            <div class="proj-items">
+            <div class="drop-items">
               <a href="/2048/">2048</a>
-              <a href="#">aaaaaaaaaaaaa</a>
+              <a href="/Currency-Converter/">idk.what.else.to.do</a>
             </div>
           </div>
         </div>
-        <a href="#">Contact</a>
+        <a href="mailto:daniel9jung@gmail.com">Contact</a>
         <a href="/Media/Daniel Jung Resume.pdf" target="_blank">Resume</a>
         <a href="https://www.linkedin.com/in/daniel9jung/" target="_blank"
           >LinkedIn</a
         >
       </nav>
     </header>
-    <section class="game-container">
-      <h1>2048</h1>
-      <div id="score">Score: <span id="score-value">0</span></div>
-      <div id="grid-container"></div>
-      <div id="message-overlay">
-        <div id="message">Game Over!</div>
-        <button id="retry-button">Retry</button>
+
+    <section class="converter">
+      <div class="converter-content">
+        <h1>Currency Converter</h1>
+        <div class="converter-screenshots">
+          <div id="converter-gui">
+            <img src="/Media/Converter GUI.png" alt="Converter GUI" />
+          </div>
+          <div id="conversion-rates">
+            <img src="/Media/Conversion Rates.png" alt="Conversion Rates" />
+          </div>
+        </div>
+        <h3>
+          This program converts currencies using Python along with a live API
+          that provides exchange rates for over 160 currencies. The graphical
+          user interface (GUI) is built using the Tkinter library, making it
+          user-friendly and accessible.
+        </h3>
       </div>
     </section>
+
     <footer class="footer">
       <div class="github">
         <a
-          href="https://github.com/danieljung1217/Personal-Website/tree/master/2048" target="_blank"
+          href="https://github.com/danieljung1217/Currency-Converter" target="_blank"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +74,7 @@
         </a>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

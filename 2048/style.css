@@ -10,29 +10,43 @@
 body {
   height: 100vh;
   display: flex;
+  
+  background-color: #1a0d2e;
 }
 
 .game-container {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 8vh;
+  margin-top: 5%;
   align-items: center;
-  background-color: #1a0d2e;
   color: #ededed;
 }
 
 #score {
+  margin-top: 20px;
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
 }
 
+
+
 #grid-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   gap: 10px;
+}
+
+
+
+.game-container h1 {
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-shadow: 5px 5px #883ffc;
+  padding: 10px;
 }
 
 .tile {
@@ -166,7 +180,7 @@ body {
   color: #883ffc;
 }
 
-.game-container::before {
+.game-container h1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -174,8 +188,21 @@ body {
   width: 100%;
   height: 100%;
   background: #1a0d2e;
-  animation: showRight 2s ease forwards;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
 }
+
+.game-container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a0d2e;
+  animation: showRight 3s ease forwards;
+}
+
 
 @keyframes showRight {
   100% {
@@ -204,7 +231,7 @@ body {
   padding-top: 6px;
 }
 
-.footer a{
+.footer {
   font-size: 24px;
   position: fixed;
   left: 0;
@@ -217,12 +244,14 @@ body {
   text-decoration: none;
 }
 
-.footer a:hover,
-.footer a.active {
+.github a:hover,
+.github a.active {
   color: #883ffc;
 }
 
-.github-svg {
+.github a {
+  
+  transition: 0.3s;
   color: #ededed;
   width: 25;
 }

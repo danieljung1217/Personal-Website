@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1a0d2e;
+  color: #ededed;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  column-gap: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #883ffc;
+}
+
+.converter {
+  margin-top: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.converter-content h1 {
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-shadow: 5px 5px #883ffc;
+  padding: 10px;
+}
+
+.converter-content h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a0d2e;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.converter-content h3 {
+  padding-top: 40px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 900px;
+}
+
+.converter-content h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a0d2e;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.converter-screenshots {
+  display: flex;
+  justify-items: center;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+#converter-gui img {
+  border-radius: 5px;
+  width: 80%;
+}
+
+#conversion-rates img {
+  border-radius: 5px;
+  width: 80%;
+}
+
+.converter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a0d2e;
+  animation: showRight 3s ease forwards;
+}
+
+
+@keyframes showRight {
+  100% {
+    width: 0%;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-items {
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #2b1057;
+}
+
+.drop-area {
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover .drop-area {
+  display: block;
+  padding-top: 6px;
+}
+
+.footer {
+  font-size: 24px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  text-align: right;
+  color: #ededed;
+  text-decoration: none;
+}
+
+.github a:hover,
+.github a.active {
+  color: #883ffc;
+}
+
+.github a {
+  
+  transition: 0.3s;
+  color: #ededed;
+  width: 25;
+}
